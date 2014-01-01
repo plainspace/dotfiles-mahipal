@@ -1,5 +1,5 @@
 [color]
-  ui = always
+  ui = true
 [core]
   editor = subl -w
 [user]
