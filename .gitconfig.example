@@ -1,0 +1,7 @@
+[color]
+  ui = always
+[core]
+  editor = subl -w
+[user]
+  name  = YOUR_NAME_HERE
+  email = YOUR_EMAIL_HERE
