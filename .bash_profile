@@ -1,7 +1,7 @@
 #---------------------------------------------------------------------------------------------------
 # Command Prompt
-# export PS1='\[\033[32;1m\]$ \[\033[0;30;1m\]\u ${HOSTNAME} \[\033[0;37m\]\w \[\033[32;1m\]$ \[\033[0m\]'
 
+# export PS1='\[\033[32;1m\]$ \[\033[0;30;1m\]\u ${HOSTNAME} \[\033[0;37m\]\w \[\033[32;1m\]$ \[\033[0m\]'
 export PS1='\[\033[0;30;1m\](\t) \[\033[32;1m\]$ \[\033[0;30;1m\]\u ${HOSTNAME} \[\033[0;37m\]\w \[\033[32;1m\]$ \[\033[0m\]'
 
 # Make `ls` colorful on OSX.
@@ -38,9 +38,10 @@ export JRUBY_OPTS="-J-XX:MaxPermSize=256M"
 
 #---------------------------------------------------------------------------------------------------
 # Git
+
+# Git Log
 # alias g="git"
 # alias gl="git log --pretty=format:'%h %ai %d %s'"
-
 gl () {
 paste -d' ' <(git log --color --pretty=format:'%ai' "$@") <(git log --color --oneline --decorate "$@")
 }
